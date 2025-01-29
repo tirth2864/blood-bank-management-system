@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/dashboard.css";
+import "./Footer.jsx";
+import Footer from "./Footer.jsx";
 
 function Dashboard() {
   return (
@@ -28,6 +30,7 @@ function Dashboard() {
         </div>
       </section>
 
+      {/* How it works*/} 
       <section className="how-it-works">
         <h2 className="section-heading">How it Works!</h2>
         <div className="steps-container">
@@ -54,7 +57,8 @@ function Dashboard() {
           </div>
         </div>
       </section>
-
+      
+      {/* Testimonials*/}
       <section className="testimonials-section">
         <div className="container">
           <div className="section-header">
@@ -161,6 +165,7 @@ function Dashboard() {
           </div>
         </div>
       </section>
+      <Footer />
     </section>
   );
 }

@@ -13,10 +13,10 @@ function SignUp() {
     bloodGroup: "",
     dob: "",
     gender: "",
-    addres: "",
+    address: "",
     medicalHistory: "",
     lastDonationDate: "",
-    agree: "false",
+    agree: false,
   });
 
   const navigate = useNavigate();
@@ -32,17 +32,17 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.password !== user.confirmPassword) {
-      alert("Passwords dont match!!");
+      alert("Passwords don't match!!");
       return;
     }
 
     if (!user.agree) {
-      alert("You must agree to the terms and condition");
+      alert("You must agree to the terms and conditions");
       return;
     }
 
     alert(
-      `Congrats ${user.fullName}, you are one step closer to save life of someone`
+      `Congrats ${user.fullName}, you are one step closer to saving someone's life`
     );
     navigate("/login");
   };
@@ -91,7 +91,7 @@ function SignUp() {
           <label htmlFor="confirmPassword">Confirm Password</label>
           <input
             type="password"
-            id="confrimPassword"
+            id="confirmPassword"
             name="confirmPassword"
             value={user.confirmPassword}
             onChange={handleChange}
@@ -121,13 +121,13 @@ function SignUp() {
             required
           >
             <option value="Donor">Donor</option>
-            <option value="Recipinet">Recipinet</option>
+            <option value="Recipient">Recipient</option>
             <option value="Admin">Admin</option>
           </select>
         </div>
         {user.role !== "Admin" && (
           <div className="form-group">
-            <label htmlFor="blood-group">Blood Group</label>
+            <label htmlFor="bloodGroup">Blood Group</label>
             <select
               name="bloodGroup"
               id="bloodGroup"
@@ -216,17 +216,15 @@ function SignUp() {
           </div>
         )}
 
-        <div className="form-group">
-          <label>
-            <input
-              type="checkbox"
-              name="agree"
-              checked={user.agree}
-              onChange={handleChange}
-              required
-            />{" "}
-            I agree to the terms and conditions.
-          </label>
+        <div className="form-group checkbox-group">
+          <input
+            type="checkbox"
+            name="agree"
+            checked={user.agree}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="agree">I agree to the terms and conditions.</label>
         </div>
 
         <button type="submit" className="signup-button">
@@ -236,4 +234,5 @@ function SignUp() {
     </div>
   );
 }
+
 export default SignUp;

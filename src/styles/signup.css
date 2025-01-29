@@ -4,31 +4,30 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #ff6464, #ff9292);
+  background: linear-gradient(to bottom right, #f8d7da, #ffffff);
   font-family: Arial, sans-serif;
 }
 
 .signup-container h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #bb1a1a;
   margin-bottom: 1rem;
 }
 
 .signup-form {
-  background: #ffffff;
-  width: 100%;
-  max-width: 450px;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #df7f7f;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form-group label {
@@ -46,6 +45,8 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group input:focus,
@@ -71,6 +72,7 @@ textarea {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
 }
 
 .signup-button:hover {
@@ -82,19 +84,22 @@ textarea {
   transform: scale(1);
 }
 
-input[type="checkbox"] {
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
   width: 1.2rem;
   height: 1.2rem;
-  margin-right: 0.5rem;
+  margin: 0;
 }
 
-label input[type="checkbox"] + span {
+.checkbox-group label {
   font-size: 0.9rem;
   color: #555;
-}
-
-.signup-form .form-group:last-of-type {
-  margin-top: 1rem;
+  margin: 0;
 }
 
 @media (max-width: 500px) {
