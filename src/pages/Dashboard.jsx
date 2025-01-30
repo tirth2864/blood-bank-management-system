@@ -30,7 +30,7 @@ function Dashboard() {
         </div>
       </section>
 
-      {/* How it works*/} 
+      {/* How it works*/}
       <section className="how-it-works">
         <h2 className="section-heading">How it Works!</h2>
         <div className="steps-container">
@@ -57,7 +57,7 @@ function Dashboard() {
           </div>
         </div>
       </section>
-      
+
       {/* Testimonials*/}
       <section className="testimonials-section">
         <div className="container">

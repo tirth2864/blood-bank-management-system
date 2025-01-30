@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 
-function Navbar(){
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -28,26 +28,40 @@ function Navbar(){
               About Us
             </NavLink>
             <NavLink
-              to="/donors"
+              to="/faq"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Donors
+              FAQs
             </NavLink>
-            <NavLink to="/inventory" className={({isActive})=>isActive?'nav-link active' : 'nav-link'}>Blood Inventory</NavLink>
-            <NavLink to="/contact" className={({isActive}) => isActive?'nav-link active' : 'nav-link'}>Contact Us</NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </div>
 
       <div className="login-section">
-        <NavLink to='/login'
-        className={({isActive})=> isActive?'nav-link active':'nav-link'}>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
           Login
         </NavLink>
-        <NavLink to='/signup'
-        className={({isActive})=> isActive?'nav-link active':'nav-link'}>
+        <NavLink
+          to="/signup"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
           SignUp
         </NavLink>
       </div>

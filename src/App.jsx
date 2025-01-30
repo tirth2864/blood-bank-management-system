@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import AboutUs from "./pages/AboutUs";
-import Donors from "./pages/Donors";
-import BloodInventory from "./pages/BloodInventory";
+import FAQs from "./pages/FAQs";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
@@ -19,8 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/donors" element={<Donors />} />
-        <Route path="/inventory" element={<BloodInventory />} />
+        <Route path="/faq" element={<FAQs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
