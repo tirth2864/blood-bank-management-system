@@ -84,7 +84,6 @@ const FAQ = () => {
         </div>
       ))}
 
-      {/* Blood Components Section */}
       <h2>Understanding Blood Components</h2>
       <div className="blood-components">
         {bloodComponents.map((component, index) => (
