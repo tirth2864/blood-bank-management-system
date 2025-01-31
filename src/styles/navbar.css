@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navbar {
   display: flex;
   background-color: #f8d7da;
@@ -24,6 +25,7 @@
   text-decoration: none;
 }
 
+/* Navigation Links */
 .navbar-list {
   list-style: none;
   display: flex;
@@ -67,11 +69,13 @@
   transform: scale(1.05);
 }
 
+/* Login/Signup Section */
 .login-section {
   display: flex;
   gap: 10px;
 }
 
+/* Hamburger Menu */
 .hamburger-menu {
   display: none;
   flex-direction: column;
@@ -93,6 +97,7 @@
   transition: all 0.3s ease;
 }
 
+/* Mobile Menu Styles */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: flex;

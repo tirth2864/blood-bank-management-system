@@ -16,14 +16,12 @@ function Navbar() {
           Rakt
         </NavLink>
 
-        {/* Hamburger Menu Button */}
         <button className="hamburger-menu" onClick={toggleMobileMenu}>
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        {/* Navigation Links */}
         <ul className={`navbar-list ${isMobileMenuOpen ? "active" : ""}`}>
           <li>
             <NavLink
@@ -71,7 +69,6 @@ function Navbar() {
           </li>
         </ul>
 
-        {/* Login/Signup Section */}
         <div className="login-section">
           <NavLink
             to="/login"
