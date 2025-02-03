@@ -1,9 +1,7 @@
 .about-container {
-  max-width: 900px;
-  margin: 40px auto; 
+  max-width: 100%;
   padding: 20px;
-  background: #fce9e9;
-  border-radius: 10px;
+  background: linear-gradient(to right, #1f1d35, rgb(214, 13, 13));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,19 +11,19 @@
 
 .about-content h1 {
   font-size: 2.5rem;
-  color: #bb1a1a;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .about-content h2 {
   font-size: 1.8rem;
-  color: #333;
-  margin-top: 20px;
+  color: #f5d0d0;
+  margin-top: 50px;
 }
 
 .about-intro {
   font-size: 1.2rem;
-  color: #555;
+  color: #bda8c5;
   margin-bottom: 20px;
 }
 
@@ -73,7 +71,7 @@
 
 .about-facts {
   font-size: 1.1rem;
-  color: #555;
+  color: #bda8c5;
   margin-top: 15px;
 }
 

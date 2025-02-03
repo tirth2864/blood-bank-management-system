@@ -1,12 +1,13 @@
 .contact-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
+  background: linear-gradient(to right, #1f1d35, rgb(214, 13, 13));
 }
 
 .contact-container h1 {
   text-align: center;
-  color: #ff4757;
+  color: #fff;
   margin-bottom: 30px;
 }
 

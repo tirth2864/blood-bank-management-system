@@ -69,6 +69,7 @@ const FAQ = () => {
   ];
 
   return (
+    <div className="main-page">
     <div className="faq-container">
       <h1>Frequently Asked Questions</h1>
       {faqData.map((item, index) => (
@@ -93,6 +94,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

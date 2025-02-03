@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
-          Rakt
+          <span className="highlight">R</span>akt
         </NavLink>
 
         <button className="hamburger-menu" onClick={toggleMobileMenu}>

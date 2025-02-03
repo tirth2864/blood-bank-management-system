@@ -1,3 +1,8 @@
+.main-page {
+  max-width: 100%;
+  background: linear-gradient(to right, #1f1d35, rgb(214, 13, 13));
+}
+
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
@@ -7,12 +12,14 @@
 .faq-container h1,
 .faq-container h2 {
   text-align: center;
-  color: #ff4757;
+  color: #ffffff;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .faq-item {
   border: 1px solid #ddd;
+  color: #eecdcd;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 15px;
@@ -22,16 +29,17 @@
 
 .faq-item:hover {
   background-color: #f9f9f9;
+  color: #dc3545;
 }
 
 .faq-item.active {
   background-color: #f1f1f1;
   border-color: #dc3545;
+  color: #dc3545;
 }
 
 .faq-question {
   font-weight: bold;
-  color: #333;
 }
 
 .faq-answer {

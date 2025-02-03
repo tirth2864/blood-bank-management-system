@@ -17,7 +17,6 @@ const AboutUs = () => {
         <div className="about-services">
           <div className="service-card">🩸 Donor Registration</div>
           <div className="service-card">🏥 Blood Request</div>
-          <div className="service-card">📦 Inventory Management</div>
           <div className="service-card">🚨 Emergency Alerts</div>
           <div className="service-card">📢 Donor Awareness and Education</div>
           <div className="service-card">🔒 Secure and Efficient Management</div>

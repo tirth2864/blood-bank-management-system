@@ -1,12 +1,16 @@
 /* Navbar Styles */
 .navbar {
   display: flex;
-  background-color: #f8d7da;
+  background-color: #f7dad6;
   border-bottom: 2px solid #dc3545;
   padding: 10px 20px;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
+}
+
+.highlight {
+  color: #1f1d35;
 }
 
 .navbar-container {
@@ -21,7 +25,6 @@
   font-size: 24px;
   font-weight: bold;
   color: #dc3545;
-  text-transform: uppercase;
   text-decoration: none;
 }
 

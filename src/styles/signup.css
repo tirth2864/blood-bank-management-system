@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #f8d7da, #ffffff);
+  background: #fff;
 }
 
 .signup-container h1 {
